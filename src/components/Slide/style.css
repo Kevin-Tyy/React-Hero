@@ -1,0 +1,104 @@
+.slide{
+  margin: 30px;
+  padding: 50px;
+  box-shadow: 0 0 15px gray;
+  border-radius: 20px;
+
+}
+.slide .box {
+  display: flex !important;
+}
+.slide .img {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto !important;
+  
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide .text {
+  width: 50%;
+  padding: 60px 0px 70px 30px;
+}
+
+.cardTwo.slide .box:nth-child(even) {
+  flex-direction: row-reverse;
+  
+}
+
+.cardTwo .slide .img {
+  padding: 10px;
+}
+.cardTwo .slide .img:hover {
+  transform: none;
+}
+
+.img {
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+img {
+  transition: 0.5s;
+  object-fit: cover;
+}
+.img img:hover {
+  transform: scale(1.1);
+}
+
+.slide h2{
+  color: crimson;
+}
+.control-btn button{
+  background: none;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(214, 214, 214, 0.5);
+  border: 1px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.control-btn .next{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  z-index: 99;
+}
+
+.control-btn .prev{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 99;
+}
+@media only screen and (min-width: 768px) and (max-width: 601px) {
+  .slide{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slide{
+    margin: 0;
+    padding: 30px;
+  }
+  .slide .box {
+    display:  block !important;
+    
+  }
+  .slide .img{
+    width: 100%;
+
+  }
+  .slide .box .text{
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 0 10px;
+    line-height: 20px !important;
+  }
+
+}
+
